@@ -1,5 +1,5 @@
-#ifndef _BOOST_SERIALIZATION_STL_TEST_HPP_
-#define _BOOST_SERIALIZATION_STL_TEST_HPP_
+#ifndef _BOOST_SERIALIZATION_POINTER_TEST_HPP_
+#define _BOOST_SERIALIZATION_POINTER_TEST_HPP_
 
 // STL
 #include <string>
@@ -9,16 +9,16 @@
 #include "gtest/gtest.h"
 
 // Boost Serialization Tutorial
-#include "../src/stl.hpp"
+#include "pointer.hpp"
 
 /** @brief Serialization Test */
-TEST(Test_STL, Serialization)
+TEST(Serialization, Pointer)
 {
 	// filename
 	std::string strFileName("Bus_Route.text");
 
 	// create class instance
-	Bus_Route_STL br1;
+	Bus_Route_Pointer br1;
 	br1[0] = Bus_Stop(GPS_Position(35, 59, 24.567f), GPS_Position(12, 53, 24.657f));
 	br1[1] = Bus_Stop(GPS_Position(13, 42, 42.165f), GPS_Position(42, 84, 95.624f));
 	br1[2] = Bus_Stop(GPS_Position(63, 79, 96.135f), GPS_Position(35, 25, 65.134f));
@@ -36,7 +36,7 @@ TEST(Test_STL, Serialization)
 	}
 	
 	// load data from archive
-	Bus_Route_STL br2;
+	Bus_Route_Pointer br2;
 	{
 		// create and open a character archive for input
 		std::ifstream ifs(strFileName);

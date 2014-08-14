@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="test.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="boost">
+      <UniqueIdentifier>{d8048dfc-ee41-4a9e-9d89-5609887f4790}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="boost\cpu_timer">
+      <UniqueIdentifier>{c83464c5-d444-4840-a07c-9b5faeea8b58}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="boost\serialization">
+      <UniqueIdentifier>{845dd064-a23d-472c-b2fc-0735c4cd568f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="boost\serialization\src">
+      <UniqueIdentifier>{15770dc2-4cf2-4304-bb16-5270c13504dd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="boost\serialization\test">
+      <UniqueIdentifier>{639c9c17-72f8-4073-90f5-b70ad65a3d03}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="boost\lexical_cast">
+      <UniqueIdentifier>{5db7da6d-bd6c-42ed-b238-fbcfe344525a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="boost\filesystem">
+      <UniqueIdentifier>{19698c61-0af1-42de-8fb8-f219eb06255b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\serialization\stl.hpp">
+      <Filter>boost\serialization\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\serialization\array.hpp">
+      <Filter>boost\serialization\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\serialization\drived_class.hpp">
+      <Filter>boost\serialization\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\serialization\invasive.hpp">
+      <Filter>boost\serialization\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\serialization\non_invasive.hpp">
+      <Filter>boost\serialization\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\serialization\pointer.hpp">
+      <Filter>boost\serialization\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\serialization\serializable_members.hpp">
+      <Filter>boost\serialization\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\serialization\shared_pointer.hpp">
+      <Filter>boost\serialization\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\serialization\test_stl.hpp">
+      <Filter>boost\serialization\test</Filter>
+    </ClInclude>
+    <ClInclude Include="..\serialization\test_array.hpp">
+      <Filter>boost\serialization\test</Filter>
+    </ClInclude>
+    <ClInclude Include="..\serialization\test_derived_class.hpp">
+      <Filter>boost\serialization\test</Filter>
+    </ClInclude>
+    <ClInclude Include="..\serialization\test_invasive.hpp">
+      <Filter>boost\serialization\test</Filter>
+    </ClInclude>
+    <ClInclude Include="..\serialization\test_non_invasive.hpp">
+      <Filter>boost\serialization\test</Filter>
+    </ClInclude>
+    <ClInclude Include="..\serialization\test_pointer.hpp">
+      <Filter>boost\serialization\test</Filter>
+    </ClInclude>
+    <ClInclude Include="..\serialization\test_serializable_members.hpp">
+      <Filter>boost\serialization\test</Filter>
+    </ClInclude>
+    <ClInclude Include="..\serialization\test_shared_pointer.hpp">
+      <Filter>boost\serialization\test</Filter>
+    </ClInclude>
+    <ClInclude Include="..\filesystem\filesystem.hpp">
+      <Filter>boost\filesystem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\filesystem\test_filesystem.hpp">
+      <Filter>boost\filesystem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\lexical_cast\test_lexical_cast.hpp">
+      <Filter>boost\lexical_cast</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cpu_timer\test_cpu_timer.hpp">
+      <Filter>boost\cpu_timer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\serialization\test_serialization.hpp">
+      <Filter>boost\serialization</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{CB62E9C0-610B-4C24-BAF3-73E96BA006C8}</ProjectGuid>
+    <RootNamespace>Boost_Examples</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LibraryPath>C:\Soohwan Kim\[01] My Castle - Research\[07] My Knights - Development\C, C++\PCL\PCL-1.6.0\PCL 1.6.0\3rdParty\Boost\lib;C:\Soohwan Kim\[01] My Castle - Research\[07] My Knights - Development\C, C++\gtest-1.7.0\msvc\gtest\Debug;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LibraryPath>C:\Soohwan Kim\[01] My Castle - Research\[07] My Knights - Development\C, C++\PCL\PCL-1.6.0\PCL 1.6.0\3rdParty\Boost\lib;C:\Soohwan Kim\[01] My Castle - Research\[07] My Knights - Development\C, C++\gtest-1.7.0\msvc\gtest\Release;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>C:\Soohwan Kim\[01] My Castle - Research\[07] My Knights - Development\C, C++\PCL\PCL-1.6.0\PCL 1.6.0\3rdParty\Boost\include;C:\Soohwan Kim\[01] My Castle - Research\[07] My Knights - Development\C, C++\gtest-1.7.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>gtestd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>C:\Soohwan Kim\[01] My Castle - Research\[07] My Knights - Development\C, C++\PCL\PCL-1.6.0\PCL 1.6.0\3rdParty\Boost\include;C:\Soohwan Kim\[01] My Castle - Research\[07] My Knights - Development\C, C++\gtest-1.7.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>gtest.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="test.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\cpu_timer\test_cpu_timer.hpp" />
+    <ClInclude Include="..\filesystem\filesystem.hpp" />
+    <ClInclude Include="..\filesystem\test_filesystem.hpp" />
+    <ClInclude Include="..\lexical_cast\test_lexical_cast.hpp" />
+    <ClInclude Include="..\serialization\array.hpp" />
+    <ClInclude Include="..\serialization\drived_class.hpp" />
+    <ClInclude Include="..\serialization\invasive.hpp" />
+    <ClInclude Include="..\serialization\non_invasive.hpp" />
+    <ClInclude Include="..\serialization\pointer.hpp" />
+    <ClInclude Include="..\serialization\serializable_members.hpp" />
+    <ClInclude Include="..\serialization\shared_pointer.hpp" />
+    <ClInclude Include="..\serialization\stl.hpp" />
+    <ClInclude Include="..\serialization\test_array.hpp" />
+    <ClInclude Include="..\serialization\test_derived_class.hpp" />
+    <ClInclude Include="..\serialization\test_invasive.hpp" />
+    <ClInclude Include="..\serialization\test_non_invasive.hpp" />
+    <ClInclude Include="..\serialization\test_pointer.hpp" />
+    <ClInclude Include="..\serialization\test_serializable_members.hpp" />
+    <ClInclude Include="..\serialization\test_serialization.hpp" />
+    <ClInclude Include="..\serialization\test_shared_pointer.hpp" />
+    <ClInclude Include="..\serialization\test_stl.hpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
