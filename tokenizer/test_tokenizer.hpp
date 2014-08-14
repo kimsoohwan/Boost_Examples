@@ -7,7 +7,7 @@
 // BOOST
 #include<boost/tokenizer.hpp>
 
-TEST(TEST_Boost, Tokenizer)
+TEST(Tokenizer, CharSeparator)
 {
 	std::string s("directory_name/sub_directory_name\\file_name.txt");
 	boost::char_separator<char> sep("/\\");

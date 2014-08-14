@@ -7,9 +7,6 @@
     <Filter Include="boost">
       <UniqueIdentifier>{d8048dfc-ee41-4a9e-9d89-5609887f4790}</UniqueIdentifier>
     </Filter>
-    <Filter Include="boost\cpu_timer">
-      <UniqueIdentifier>{c83464c5-d444-4840-a07c-9b5faeea8b58}</UniqueIdentifier>
-    </Filter>
     <Filter Include="boost\serialization">
       <UniqueIdentifier>{845dd064-a23d-472c-b2fc-0735c4cd568f}</UniqueIdentifier>
     </Filter>
@@ -24,6 +21,18 @@
     </Filter>
     <Filter Include="boost\filesystem">
       <UniqueIdentifier>{19698c61-0af1-42de-8fb8-f219eb06255b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="boost\tokenizer">
+      <UniqueIdentifier>{79591a15-c539-4aad-a004-faf0e1de4f70}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="boost\chrono">
+      <UniqueIdentifier>{605a0d36-b92c-48c8-a2e4-11212ce92728}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="boost\timer">
+      <UniqueIdentifier>{c83464c5-d444-4840-a07c-9b5faeea8b58}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="boost\log">
+      <UniqueIdentifier>{e18c1bba-3bfa-4976-bf29-8f4417ae596a}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -84,11 +93,23 @@
     <ClInclude Include="..\lexical_cast\test_lexical_cast.hpp">
       <Filter>boost\lexical_cast</Filter>
     </ClInclude>
-    <ClInclude Include="..\cpu_timer\test_cpu_timer.hpp">
-      <Filter>boost\cpu_timer</Filter>
-    </ClInclude>
     <ClInclude Include="..\serialization\test_serialization.hpp">
       <Filter>boost\serialization</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tokenizer\test_tokenizer.hpp">
+      <Filter>boost\tokenizer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\chrono\test_chrono.hpp">
+      <Filter>boost\chrono</Filter>
+    </ClInclude>
+    <ClInclude Include="..\chrono\round_up.hpp">
+      <Filter>boost\chrono</Filter>
+    </ClInclude>
+    <ClInclude Include="..\timer\test_timer.hpp">
+      <Filter>boost\timer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\log\test_log.hpp">
+      <Filter>boost\log</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

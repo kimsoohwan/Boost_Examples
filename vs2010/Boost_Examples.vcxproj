@@ -74,10 +74,12 @@
     <ClCompile Include="test.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\cpu_timer\test_cpu_timer.hpp" />
+    <ClInclude Include="..\chrono\round_up.hpp" />
+    <ClInclude Include="..\chrono\test_chrono.hpp" />
     <ClInclude Include="..\filesystem\filesystem.hpp" />
     <ClInclude Include="..\filesystem\test_filesystem.hpp" />
     <ClInclude Include="..\lexical_cast\test_lexical_cast.hpp" />
+    <ClInclude Include="..\log\test_log.hpp" />
     <ClInclude Include="..\serialization\array.hpp" />
     <ClInclude Include="..\serialization\drived_class.hpp" />
     <ClInclude Include="..\serialization\invasive.hpp" />
@@ -95,6 +97,8 @@
     <ClInclude Include="..\serialization\test_serialization.hpp" />
     <ClInclude Include="..\serialization\test_shared_pointer.hpp" />
     <ClInclude Include="..\serialization\test_stl.hpp" />
+    <ClInclude Include="..\timer\test_timer.hpp" />
+    <ClInclude Include="..\tokenizer\test_tokenizer.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
